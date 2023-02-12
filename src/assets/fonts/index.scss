@@ -1,0 +1,100 @@
+$font-family-Futura-bold: 'Futura-bold', sans-serif;
+$font-family-Kinopoisk-bold: 'Kinopoisk-bold', sans-serif;
+$font-family-Kinopoisk-light: 'Kinopoisk-light', sans-serif;
+$font-family-Kinopoisk-lite: 'Kinopoisk-lite', sans-serif;
+$font-family-Kinopoisk-medium: 'Kinopoisk-medium', sans-serif;
+$font-family-Kinopoisk-regular: 'Kinopoisk-regular', sans-serif;
+$font-family-Kinopoisk-semi-bold: 'Kinopoisk-semi-bold', sans-serif;
+
+@font-face {
+  font-family: 'Futura-bold';
+  src: url('~/src/assets/fonts/Kinopoisk/futura-bold.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Kinopoisk-bold';
+  src: url('~/src/assets/fonts/Kinopoisk/kinopoisk-bold.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Kinopoisk-light';
+  src: url('~/src/assets/fonts/Kinopoisk/kinopoisk-light.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Kinopoisk-lite';
+  src: url('~/src/assets/fonts/Kinopoisk/kinopoisk-lite.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Kinopoisk-medium';
+  src: url('~/src/assets/fonts/Kinopoisk/kinopoisk-medium.woff2')
+    format('woff2');
+}
+
+@font-face {
+  font-family: 'Kinopoisk-regular';
+  src: url('~/src/assets/fonts/Kinopoisk/kinopoisk-regular.woff2')
+    format('woff2');
+}
+
+@font-face {
+  font-family: 'Kinopoisk-semi-bold';
+  src: url('~/src/assets/fonts/Kinopoisk/kinopoisk-semibold.woff2')
+    format('woff2');
+}
+
+@mixin font-base {
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+}
+
+@mixin fontFutura45BoldUppercase {
+  font-family: $font-family-Futura-bold;
+  font-size: 45px;
+  line-height: 72px;
+  text-transform: uppercase;
+
+  @include font-base;
+}
+
+@mixin fontKinopoisk14Regular {
+  font-family: $font-family-Kinopoisk-regular;
+  font-size: 14px;
+  line-height: 18px;
+
+  @include font-base;
+}
+
+@mixin fontKinopoisk15Regular {
+  font-family: $font-family-Kinopoisk-regular;
+  font-size: 15px;
+  line-height: 100%;
+
+  @include font-base;
+}
+
+@mixin fontKinopoisk20Light {
+  font-family: $font-family-Kinopoisk-light;
+  font-size: 20px;
+  line-height: 32px;
+  letter-spacing: 0.4px;
+
+  @include font-base;
+}
+
+@mixin fontKinopoisk16Medium {
+  font-family: $font-family-Kinopoisk-medium;
+  font-size: 16px;
+  line-height: 15px;
+
+  @include font-base;
+}
+
+@mixin fontKinopoisk15SemiBold {
+  font-family: $font-family-Kinopoisk-semi-bold;
+  font-size: 15px;
+  line-height: 100%;
+
+  @include font-base;
+}
